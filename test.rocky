@@ -1,0 +1,9 @@
+stamp("Hello World!")
+int x = 5
+int y = x + 10
+int z = y
+str s = "hola mundo"
+str t = s
+int w = q + 1
+str bad = x
+int x = 7
