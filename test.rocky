@@ -1,9 +1,21 @@
 stamp("Hello World!")
 int x = 5
 int y = x + 10
-int z = y
+int z = y + 10
 str s = "hola mundo"
 str t = s
 int w = q + 1
 str bad = x
 int x = 7
+stamp(x)
+stamp(y)
+stamp(z)
+mix[] rayos = ["Hola", 'V', 56];
+mix[2] ord = ['V', "Hola"];
+int[2,3] mat = [[1, 2, 3], [4, 5, 6]]     ✓ silent
+int[] mat2 = [[1], [2]]                   ✓ silent
+int[2,2] rag = [[1, 2], [3]]              → row 2 has 1 elements, expected 2
+int[2,3] dim = [[1, 2, 3]]                → declared 2x3, got 1x3
+int[2] one = [[1], [2]]                   → syntax error        (1 dim, not 0 or 2)
+int[0,3] zero = [[1, 2, 3], [4, 5, 6]]    → syntax error        (0 rejected by [1-9])
+int[] emp = []                            → stored empty (knob: forbid via intBlobRe)
