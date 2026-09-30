@@ -1,0 +1,85 @@
+stamp("== stampvar ==")
+str nombre = "Pablo"
+int edad = 21
+stampvar("Hola {nombre}, tienes {edad} años")
+
+stamp("== if / else ==")
+if (edad < 18) {
+    stamp("menor de edad")
+}
+else {
+    stamp("mayor de edad")
+}
+
+if (edad == 21) {
+    stamp("tienes 21")
+}
+else if (edad > 65) {
+    stamp("jubilado")
+}
+else {
+    stamp("otra edad")
+}
+
+if (edad > 18 && edad < 65) {
+    stamp("en edad de trabajar")
+}
+
+if (nombre == "Pablo" || nombre == "Pedro") {
+    stamp("hola, P")
+}
+
+stamp("== for ==")
+for(i = 0 / i < 3 / i++){
+    stampvar("vuelta {i}")
+}
+stamp(i)
+
+stamp("== switch ==")
+switch(edad){
+    (edad < 18){
+        stamp("nino")
+    }
+    (edad == 21){
+        stamp("justo 21")
+    }
+    default {
+        stamp("otro")
+    }
+}
+
+switch(edad){
+    (edad > 100){
+        stamp("imposible")
+    }
+    default {
+        stamp("cayo el default")
+    }
+}
+
+stamp("== fun ==")
+fun int cuenta(int n){
+    if (n >= 10) {
+        ret 0;
+    }
+    ret 1 + cuenta(n + 1);
+}
+stamp(cuenta(0))
+int total = cuenta(3)
+stamp(total)
+
+fun str eco(str s){
+    ret s;
+}
+stamp(eco("hey"))
+
+fun void saluda(int veces){
+    for(k = 0 / k < veces / k++){
+        stamp("hola!")
+    }
+}
+saluda(2)
+
+stamp("== errores controlados ==")
+stamp(noExiste)
+misteriosa(1);
