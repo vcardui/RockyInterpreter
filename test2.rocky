@@ -1,7 +1,7 @@
 stamp("== stampvar ==")
 str nombre = "Pablo"
 int edad = 21
-stampvar("Hola {nombre}, tienes {edad} anos")
+stampvar("Hola {nombre}, tienes {edad} años")
 
 stamp("== if / else ==")
 if (edad < 18) {
