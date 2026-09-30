@@ -1,5 +1,5 @@
 /*
-9 de diciembre de 2024
+30 de septiembre de 2026
 Paola Montserrat Osorio García - 216511
 Pablo David Pérez López - 300452
 Vanessa Reteguín - 375533
